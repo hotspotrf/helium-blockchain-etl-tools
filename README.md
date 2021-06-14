@@ -13,6 +13,7 @@ sudo apt install jq tmux wget
 chmod +x etl-status.sh
 tmux new-session -s etl_watch 'watch -n8 ./etl-status.sh'
 ```
+Upon running the `tmux new-session -s etl_watch 'watch -n8 ./etl-status.sh'`, the terminal may go blank - that is normal - it'll take a few to start.
 
 To exit out of tmux you press CTRL+B and just hit the "d" key on your keyboard. To reattach yourself to that session:
 
