@@ -25,6 +25,7 @@ This script is just meant to be ran while the ETL is running, out-of-the-box - n
 Sometimes the ETL will unexpectedly crash, this keeps it alive and well. You'll want to crontab this; every 5 mins depending on your needs.
 
 ```
+chmod +x etl-status.sh
 crontab -e
 */5 * * * * $HOME/helium-blockchain-etl-tools/etl-live.sh
 ```
